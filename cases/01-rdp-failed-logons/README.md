@@ -9,6 +9,21 @@ Caso práctico de SOC L1 sobre una alerta de múltiples intentos fallidos de aut
 
 El análisis identifica un patrón automatizado de intentos contra varias cuentas. No se observa ningún acceso exitoso desde la IP sospechosa, aunque un inicio de sesión posterior de la cuenta `backup` desde un host interno requiere validación adicional.
 
+## Investigation Snapshot
+
+| Item | Result |
+|---|---|
+| Alert type | Multiple failed RDP logons |
+| Suspicious source | `203.0.113.45` |
+| Destination | `192.168.1.25:3389` |
+| Failed attempts | 24 |
+| Accounts targeted | 3 |
+| Successful login from suspicious source | No |
+| Related event | Successful `backup` SMB login requires validation |
+| Verdict | Suspected automated credential guessing |
+| Confidence | Medium-High |
+| Escalation | Yes |
+
 ## Scenario
 
 A security alert was triggered after multiple failed authentication events were observed against a Windows host within a short period of time.
@@ -23,6 +38,7 @@ Alert information:
 The dataset used in this investigation is synthetic and was created specifically for this personal SOC lab.
 
 The event schema is simplified and normalized for training purposes and does not represent the complete raw structure of Windows Security Event Logs.
+
 
 ## Investigation goals
 
@@ -75,6 +91,22 @@ The accounts were targeted in a repeating sequence:
 The attempts also occurred at relatively regular intervals of approximately 7–9 seconds.
 
 This repeated account rotation and timing pattern is more consistent with automated credential guessing than with a normal user repeatedly entering an incorrect password.
+
+## False Positive vs True Positive Thinking
+
+### Evidence suggesting malicious activity
+
+- Repeated failed attempts from the same external source
+- Multiple targeted accounts
+- Repeating account rotation
+- Regular timing pattern
+
+### Evidence that prevents confirming compromise
+
+- No successful login from the suspicious source
+- The later `backup` login came from a different internal IP
+- The later login used SMB instead of RDP
+- No historical baseline is available
 
 ### Successful authentication review
 
