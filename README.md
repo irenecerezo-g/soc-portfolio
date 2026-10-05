@@ -60,3 +60,11 @@ Portfolio personal de aprendizaje orientado a SOC / Blue Team.
 Incluye casos prácticos de laboratorio y escenarios sintéticos documentados con análisis, evidencias y criterios de escalado.
 
 Mi objetivo es desarrollar experiencia práctica para optar a mi primera posición como SOC Analyst L1 / Junior.
+
+## What I learned
+
+This lab helped me understand that a successful login occurring shortly after failed attempts does not automatically confirm compromise.
+
+The `backup` authentication initially looked especially suspicious because the account had just been targeted. However, the different source IP and SMB service meant that it had to be treated as an event requiring validation rather than direct evidence of compromise.
+
+I also learned the importance of separating confirmed observations from hypotheses when documenting and escalating a SOC alert.
