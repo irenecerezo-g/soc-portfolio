@@ -1,6 +1,6 @@
 # SOC Portfolio
 
-Personal SOC / Blue Team portfolio with hands-on investigations, labs and incident analysis.
+Personal SOC / Blue Team learning portfolio with practice cases and lab notes.
 
 ## About me
 
@@ -8,8 +8,8 @@ I am a DAM and DAW graduate currently transitioning into cybersecurity and SOC e
 
 I am currently studying:
 - IBM SkillsBuild – Cybersecurity Fundamentals
-- Microsoft SC-900
-- Cisco CCST Cybersecurity (upcoming)
+- Microsoft SC-900 – exam preparation
+- Cisco CCST Cybersecurity – upcoming
 
 This repository contains personal labs and practice cases focused on SOC L1 skills such as log analysis, alert triage, incident documentation and basic threat investigation.
 
@@ -17,22 +17,44 @@ This repository contains personal labs and practice cases focused on SOC L1 skil
 
 ## Projects
 
-### 01. RDP Failed Logons Investigation
-Investigation of multiple failed RDP authentication attempts from an external IP, including evidence review, timeline, IP enrichment, triage and escalation recommendations.
+### [01. RDP Failed Logons Investigation](cases/01-rdp-failed-logons/)
 
-Status: In progress
+Investigation of multiple failed RDP authentication attempts from an external IP.
 
-## Skills being practiced
+Includes:
+- synthetic event evidence
+- timeline
+- triage analysis
+- MITRE ATT&CK mapping
+- escalation note
+- recommended actions
+- limitations
+
+Status: Completed – v1
+
+## Skills demonstrated
 
 - Log analysis
 - IP and port analysis
-- RDP
+- RDP authentication analysis
 - Alert triage
 - Incident documentation
-- Basic threat intelligence
-- Microsoft Entra ID
-- Networking fundamentals
+- Basic escalation workflow
 
-## Goal
+## Next cases
 
-My goal is to build practical SOC / Blue Team skills and document my learning while preparing for my first SOC Analyst L1 / Junior Cybersecurity role.
+- Phishing email investigation
+- Failed logons followed by successful authentication
+- SIEM-based alert investigation
+
+## Contact
+
+LinkedIn: https://www.linkedin.com/in/irene-cerezo-gomez-it/
+
+## Resumen en español
+
+Portfolio personal de aprendizaje orientado a SOC / Blue Team.
+
+Incluye casos prácticos de laboratorio y escenarios sintéticos documentados con análisis, evidencias y criterios de escalado.
+
+Mi objetivo es desarrollar experiencia práctica para optar a mi primera posición como SOC Analyst L1 / Junior.
