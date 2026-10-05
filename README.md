@@ -7,22 +7,25 @@ Personal SOC / Blue Team learning portfolio with practice cases and lab notes.
 I am a DAM and DAW graduate currently transitioning into cybersecurity and SOC environments.
 
 I am currently studying:
+
 - IBM SkillsBuild – Cybersecurity Fundamentals
 - Microsoft SC-900 – exam preparation
 - Cisco CCST Cybersecurity – upcoming
 
-This repository contains personal labs and practice cases focused on SOC L1 skills such as log analysis, alert triage, incident documentation and basic threat investigation.
+This repository contains personal labs and practice cases focused on SOC L1 skills such as log analysis, alert triage, incident documentation and basic security investigation.
 
 > All cases in this repository are personal labs or synthetic scenarios. They do not represent professional SOC experience.
 
 ## Projects
 
-### [01. RDP Failed Logons Investigation](cases/01-rdp-failed-logons/)
+### [01. Suspected RDP Credential Guessing from an External Source](cases/01-rdp-failed-logons/)
 
-Investigation of multiple failed RDP authentication attempts from an external IP.
+Investigation of repeated failed RDP authentication attempts against a Windows host, including analysis of a related successful login requiring validation.
 
 Includes:
+
 - synthetic event evidence
+- evidence summary
 - timeline
 - triage analysis
 - MITRE ATT&CK mapping
@@ -30,7 +33,7 @@ Includes:
 - recommended actions
 - limitations
 
-Status: Completed – v1
+**Status:** Completed
 
 ## Skills demonstrated
 
@@ -44,12 +47,11 @@ Status: Completed – v1
 ## Next cases
 
 - Phishing email investigation
-- Failed logons followed by successful authentication
 - SIEM-based alert investigation
 
 ## Contact
 
-LinkedIn: https://www.linkedin.com/in/irene-cerezo-gomez-it/
+LinkedIn: [https://www.linkedin.com/in/irene-cerezo-gomez-it/](https://www.linkedin.com/in/irene-cerezo-gomez-it/)
 
 ## Resumen en español
 
